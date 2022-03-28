@@ -22,8 +22,9 @@ def run_query():
 # Results are returned as [...results]
 rows = run_query()
 print(rows)
-print(rows.data[0])
+print(rows.data)
 
 # Print results.
-# for row in rows.data:
-#     st.write(f"Name of country is {row["name"]} and it is on:{row["continent"]}:")
+for row in rows.data:
+    st.write(row)
+    # st.write(f"Name of country is {row["name"]} and it is on:{row["continent"]}:")
