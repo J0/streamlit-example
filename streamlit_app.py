@@ -21,7 +21,7 @@ def run_query():
 
 # Results are returned as [...results]
 rows = run_query()
-print(rows)
+print(rows.data)
 
 # Print results.
 for row in rows:
