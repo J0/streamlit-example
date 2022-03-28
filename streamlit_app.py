@@ -25,4 +25,4 @@ print(rows.data[0])
 
 # Print results.
 for row in rows.data:
-    st.write(f"Name of country is {row.name} and it is on:{row.continent}:")
+    st.write(f"Name of country is {row["name"]} and it is on:{row["continent"]}:")
