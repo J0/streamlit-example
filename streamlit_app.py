@@ -20,7 +20,7 @@ def run_query():
     return supabase.table("countries").select("*").execute()
 
 # Results are returned as [...results]
-rows = run_query()[0]
+rows = run_query()
 
 # Print results.
 for row in rows:
