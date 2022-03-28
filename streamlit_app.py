@@ -10,6 +10,7 @@ def init_connection():
     password = result.password
     database = result.path[1:]
     hostname = result.hostname
+    port = result.port
     return psycopg2.connect(
         database = database,
         user = username,
